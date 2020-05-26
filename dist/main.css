@@ -1,0 +1,71 @@
+body{
+    background-color: black;
+    /*background: url("img/fond.png");*/
+    font-family: 'Ubuntu', sans-serif;
+}
+legend, label{
+    color: white;
+}
+fieldset{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    transform: translateY(30%);
+}
+div > input[type="mail"], input[type="password"]{
+    display: inherit;
+    margin: auto;
+    width: 350px;
+}
+input[type="submit"]{
+    display: inherit;
+    margin: auto;
+    transform: translateY(180px);
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    width: 280px;
+    font-size: large;
+    padding: 7px;
+    transition: 0.5s;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+input[type="submit"]:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    padding: 5px;
+}
+label{
+    display: inline-block;
+}
+#oublimdp{
+    color: white;
+    transform: translate(23px, 150px);
+    display: inline-block;
+}
+#password{
+    padding: 5px;
+}
+.motdepasse{
+    transform: translateY(130px);
+}
+label[for="password"], label[for="mail"]{
+    transform: translate(19px, -8px);
+}
+.addressemail{
+    transform: translateY(90px);
+}
+#mail{
+    padding: 5px;
+}
+.show{
+    color: white;
+    font-size: 11px;
+    display: inline-block;
+    transform: translate(15px, 7px);
+}
+input[type="checkbox"]{
+    transform: translate(14px, 10px);
+}
