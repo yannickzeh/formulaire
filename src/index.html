@@ -7,21 +7,28 @@
   </head>
   <body>
     <fieldset>
+      <div class="errorconnexion invisible">
+        Votre adresse mail et/ou mot de passe est incorrect.
+      </div>
+      <div class="goodconnexion invisible">
+        Vous êtes connecté.
+      </div>
       <legend>
         Formulaire JavaScript
       </legend>
-        <form>
+        <form id="form">
           <div class="addressemail">
-          <label for="mail">Entrez votre adresse mail :</label>
-          <input type="mail" id="mail" name="mail" placeholder="martin.matin@votremail.fr">
+          <label for="email">Entrez votre adresse mail :</label>
+          <input type="email" id="email" name="email" placeholder="martin.matin@votremail.fr" required>
           </div>
           <div class="motdepasse">
           <label for="password">Mot de passe :</label>
-          <input type="password" id="password" name="password" placeholder="c8d2b3">
-          <input type="checkbox" onclick="myFunction()" title="voir"><p class="show">Voir le mot de passe</p>
+          <input type="password" id="password" name="password" placeholder="c8d2b3" required>
+          <input type="checkbox" id="voirmdp" title="voir"><p class="show">Voir le mot de passe</p>
         </div>
           <div>
-          <a href="#" id="oublimdp" alt="motdepasseoublie">Mot de passe oublié ?</a>
+          <a href="motdepasseoubli.html" id="oublimdp" alt="motdepasseoublie">Mot de passe oublié ?</a>
+          <a href="creationcompte.html" id="creationcompte" alt="creationcompte">Créer un compte</a>
         </div>
       <div>
           <input type="submit" name="submit" id="submit" value="SE CONNECTER">
