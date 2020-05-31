@@ -12,7 +12,7 @@ fieldset{
     margin: 0 auto;
     transform: translateY(30%);
 }
-div > input[type="mail"], input[type="password"]{
+div > input[type="email"], input[type="password"], input[type="text"]{
     display: inherit;
     margin: auto;
     width: 350px;
@@ -45,19 +45,24 @@ label{
     transform: translate(23px, 150px);
     display: inline-block;
 }
+#creationcompte{
+    color: white;
+    transform: translate(70px, 150px);
+    display: inline-block;
+}
 #password{
     padding: 5px;
 }
 .motdepasse{
     transform: translateY(130px);
 }
-label[for="password"], label[for="mail"]{
+label[for="password"], label[for="email"]{
     transform: translate(19px, -8px);
 }
 .addressemail{
     transform: translateY(90px);
 }
-#mail{
+#email{
     padding: 5px;
 }
 .show{
@@ -68,4 +73,15 @@ label[for="password"], label[for="mail"]{
 }
 input[type="checkbox"]{
     transform: translate(14px, 10px);
+}
+.errorconnexion{
+    background-color: red;
+    color: white;
+}
+.invisible{
+    display: none;
+}
+.goodconnexion{
+    background-color: green;
+    color: white;
 }
