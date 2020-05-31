@@ -1,6 +1,7 @@
 body{
-    background-color: black;
-    /*background: url("img/fond.png");*/
+    background: url("img/fond.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
     font-family: 'Ubuntu', sans-serif;
 }
 legend, label{
