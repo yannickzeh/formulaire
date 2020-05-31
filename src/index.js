@@ -27,6 +27,16 @@ const onFormSubmit = e => {
 
 document.querySelector('#form').addEventListener('submit',onFormSubmit);
 
+
+const ProcessDataForm = data => {
+  if (data.get('password') === password && data.get('email') === email)
+  {
+    handleSuccessMessage();
+  } else {
+    handleErrorMessage();
+  }
+}
+
 const handleErrorMessage = () => {
   document.querySelector('.errorconnexion').classList.remove('invisible');
   document.querySelector('.goodconnexion').classList.add('invisible');
