@@ -30,6 +30,21 @@ module.exports = {
       inject: true,
       filename: 'index.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/creationcompte.html',
+      inject: true,
+      filename: 'creationcompte.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/motdepasseoubli.html',
+      inject: true,
+      filename: 'motdepasseoubli.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/connexionreussi.html',
+      inject: true,
+      filename: 'connexionreussi.html'
+    }),
     new MiniCssExtractPlugin()
   ],
   devServer: {
