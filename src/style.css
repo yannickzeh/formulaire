@@ -13,7 +13,7 @@ fieldset{
     margin: 0 auto;
     transform: translateY(30%);
 }
-div > input[type="email"], input[type="password"], input[type="text"]{
+div > input[type="email"], input[type="password"], input[type="text"], input{
     display: inherit;
     margin: auto;
     width: 350px;
@@ -57,7 +57,7 @@ label{
 .motdepasse{
     transform: translateY(130px);
 }
-label[for="password"], label[for="email"]{
+label{
     transform: translate(19px, -8px);
 }
 .addressemail{
@@ -75,7 +75,7 @@ label[for="password"], label[for="email"]{
 input[type="checkbox"]{
     transform: translate(14px, 10px);
 }
-.errorconnexion{
+.errorconnexion, .badpassword{
     background-color: red;
     color: white;
 }
@@ -85,4 +85,45 @@ input[type="checkbox"]{
 .goodconnexion{
     background-color: green;
     color: white;
+}
+.connecter > p {
+    color: white;
+}
+#retrouvercompte{
+transform: translateY(10px);
+}
+#retrouvermdp{
+    transform: translateY(35px);
+}
+.creaaddressemail{
+    transform: translateY(70px);
+}
+.creamotdepasse{
+    transform: translateY(90px);
+}
+.validermotdepasse{
+    transform: translateY(110px);
+}
+.validermotdepasse > input{
+    padding: 5px;
+}
+.nom{
+    transform: translateY(40px);
+}
+.nom > input, .prenom > input{
+    padding: 5px;
+}
+.prenom{
+    transform: translateY(20px);
+}
+.crea > fieldset{
+    height: 500px;
+    transform: translateY(20%);
+}
+.creationcompte{
+    transform: translateY(-30px);
+}
+#voirmdp{
+    display: inline-block;
+    width: 15px;
 }
