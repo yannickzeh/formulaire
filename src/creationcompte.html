@@ -5,13 +5,15 @@
     <title>Webpack demo</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="crea">
     <fieldset>
-      
+      <div class="badpassword invisible">
+        Les mots de passe ne sont pas identique.
+      </div>
       <legend>
-        Formulaire JavaScript
+        Création de compte
       </legend>
-        <form id="form">
+        <form id="formulairecompte">
             <div class="prenom">
                 <label for="prenom">Entrez votre Prénom :</label>
                 <input type="text" id="prenom" name="prenom" placeholder="Pierre">
@@ -20,11 +22,11 @@
                 <label for="nom">Entrez votre nom :</label>
                 <input type="text" id="nom" name="nom" placeholder="Alexis">
             </div>
-          <div class="addressemail">
+          <div class="creaaddressemail">
           <label for="email">Entrez votre adresse mail :</label>
           <input type="email" id="email" name="email" placeholder="martin.matin@votremail.fr">
           </div>
-          <div class="motdepasse">
+          <div class="creamotdepasse">
           <label for="password">Mot de passe :</label>
           <input type="password" id="password" name="password" placeholder="c8d2b3">
         </div>
@@ -32,8 +34,8 @@
             <label for="validerpassword">Valider votre mot de passe :</label>
             <input type="password" id="validerpassword" name="validerpassword">
           </div>
-      <div>
-          <input type="submit" name="submit" id="submit" value="Création du compte">
+      <div class="creationcompte">
+          <input type="submit" name="creacompte" id="creacompte" value="Création du compte">
       </div>
         </form>
     </fieldset>
