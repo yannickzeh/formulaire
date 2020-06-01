@@ -31,7 +31,7 @@ document.querySelector('#form').addEventListener('submit',onFormSubmit);
 const ProcessDataForm = data => {
   if (data.get('password') === password && data.get('email') === email)
   {
-    handleSuccessMessage();
+    window.location.replace('connexionreussi.html');
   } else {
     handleErrorMessage();
   }
@@ -40,11 +40,6 @@ const ProcessDataForm = data => {
 const handleErrorMessage = () => {
   document.querySelector('.errorconnexion').classList.remove('invisible');
   document.querySelector('.goodconnexion').classList.add('invisible');
-}
-
-const handleSuccessMessage = () => {
-  document.querySelector('.goodconnexion').classList.remove('invisible');
-  document.querySelector('.errorconnexion').classList.add('invisible');
 }
 
 
